@@ -17,7 +17,6 @@
             <Dependency>cmake</Dependency>
             <Dependency>qt5-linguist</Dependency>
             <Dependency>ninja</Dependency>
-            <!--<Dependency>qt5-tools</Dependency> -->
             <Dependency>libgcc</Dependency>
             <Dependency>pam-devel</Dependency>
             <Dependency>qt5-base-devel</Dependency>
@@ -31,10 +30,6 @@
             <Dependency>libgcc</Dependency>
             <Dependency>pam</Dependency>
             <Dependency>qt5-base</Dependency>
-            <Dependency>cmake</Dependency>
-            <Dependency>qt5-linguist</Dependency>
-            <Dependency>ninja</Dependency>
-        <!--<Dependency>qt5-tools</Dependency> -->
             <Dependency>polkit-qt</Dependency>
         </RuntimeDependencies>
         <Files>
@@ -51,7 +46,7 @@
     </Package>
     <History>
         <Update release="1">
-            <Date>2020-11-10</Date>
+            <Date>2021-05-20</Date>
             <Version>1.2.1</Version>
             <Comment>First release</Comment>
             <Name>AYDIN ATMACA</Name>
