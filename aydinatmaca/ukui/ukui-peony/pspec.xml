@@ -15,11 +15,11 @@
         <Archive sha1sum="ef43ff7fb2a9398750d4b9c2385b00ff526bf2ed" type="targz">https://codeload.github.com/ukui/peony/tar.gz/v3.0.4</Archive>
         <BuildDependencies>
             <Dependency>libgcc</Dependency>
-            <Dependency>gtk2-devel</Dependency>
             <Dependency>glib2-devel</Dependency>
             <Dependency>libX11-devel</Dependency>
             <Dependency>udisks2-devel</Dependency>
             <Dependency>qt5-base-devel</Dependency>
+            <Dependency>qt5-linguist</Dependency>
             <Dependency>libnotify-devel</Dependency>
             <Dependency>poppler-qt5-devel</Dependency>
             <Dependency>gsettings-qt-devel</Dependency>
@@ -31,7 +31,6 @@
     <Package>
         <Name>ukui-peony</Name>
         <RuntimeDependencies>
-            <Dependency>gtk2</Dependency>
             <Dependency>glib2</Dependency>
             <Dependency>libX11</Dependency>
             <Dependency>libgcc</Dependency>
