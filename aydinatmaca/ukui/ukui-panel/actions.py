@@ -12,17 +12,17 @@ from pisi.actionsapi import get
 shelltools.export("JOBS", get.makeJOBS().replace("-j5", "-j1"))
 
 def setup():
-	shelltools.makedirs("build")
-	shelltools.cd("build")
-	cmaketools.configure("-DCMAKE_INSTALL_LIBDIR=lib -L", sourceDir = '..')
+    shelltools.makedirs("build")
+    shelltools.cd("build")
+    cmaketools.configure("-DCMAKE_INSTALL_LIBDIR=lib -L", sourceDir = '..')
 
 def build():
-	shelltools.cd("build")
-	cmaketools.make()
+    shelltools.cd("build")
+    cmaketools.make()
 
 def install():
-	shelltools.cd("build")
-	cmaketools.rawInstall("DESTDIR=%s" % get.installDIR())
+    shelltools.cd("build")
+    cmaketools.rawInstall("DESTDIR=%s" % get.installDIR())
 
-	shelltools.cd("..")
-	pisitools.dodoc("COPYING", "CHANGELOG", "COPYING", "README.md", "NEWS")
+    shelltools.cd("..")
+    pisitools.dodoc("COPYING", "CHANGELOG", "COPYING", "README.md", "NEWS")

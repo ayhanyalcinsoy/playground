@@ -24,14 +24,14 @@
             <Dependency>libXcomposite-devel</Dependency>
             <Dependency>qt5-x11extras-devel</Dependency>
             <Dependency>dconf-devel</Dependency>
+            <Dependency>qt5-webkit-devel</Dependency>
+            <Dependency>qt5-linguist</Dependency>
+            <Dependency>qt5-svg-devel</Dependency>
             <Dependency>kwindowsystem-devel</Dependency>
             <Dependency>libqtxdg-devel</Dependency>
-            <Dependency>qt5-webkit-devel</Dependency>
-            <Dependency>ukui-biometric-auth</Dependency>
-            <Dependency>ukui-menu</Dependency>
-            <Dependency>ukui-menus</Dependency>
-            <Dependency>cmake</Dependency>
-            <Dependency>ninja</Dependency>
+            <!--Dependency>ukui-biometric-auth</Dependency-->
+            <!--Dependency>ukui-menu</Dependency-->
+            <Dependency>extra-cmake-modules</Dependency>
         </BuildDependencies>
     </Source>
 
@@ -48,35 +48,25 @@
             <Dependency>libXcomposite</Dependency>
             <Dependency>qt5-x11extras</Dependency>
             <Dependency>dconf</Dependency>
+            <Dependency>qt5-webkit</Dependency>
             <Dependency>kwindowsystem</Dependency>
             <Dependency>libqtxdg</Dependency>
-            <Dependency>qt5-webkit</Dependency>
-            <Dependency>ukui-biometric-auth</Dependency>
-            <Dependency>ukui-menu</Dependency>
-            <Dependency>ukui-menus</Dependency>
-            <Dependency>cmake</Dependency>
-            <Dependency>ninja</Dependency>
         </RuntimeDependencies>
-        -->
         <Files>
-           <Path fileType="library">/usr/lib</Path>
+            <Path fileType="executable">/usr/bin</Path>
             <Path fileType="config">/etc/xdg</Path>
-           <Path fileType="doc">/usr/share/doc</Path>
-           <Path fileType="data">/usr/share/omf</Path>
-           <Path fileType="executable">/usr/bin</Path>
-           <Path fileType="data">/usr/share/man</Path>
-           <Path fileType="data">/usr/share/cmake</Path>
-           <Path fileType="data">/usr/share/ukui</Path>
-           <Path fileType="data">/usr/share/help</Path>
-           <Path fileType="data">/usr/share/icons</Path>
-           <Path fileType="data">/usr/share/dbus-1</Path>
-           <Path fileType="data">/usr/share/gir-1.0</Path>
-           <Path fileType="data">/usr/share/glib-2.0</Path>
-            <Path fileType="executable">/usr/libexec/</Path>
-           <Path fileType="data">/usr/share/ukui/ukui-panel</Path>
-           <Path fileType="localedata">/usr/share/locale</Path>
-           <Path fileType="data">/usr/share/applications</Path>
-            -->
+            <Path fileType="library">/usr/lib/ukui-panel</Path>
+            <Path fileType="doc">/usr/share/doc</Path>
+            <Path fileType="data">/usr/share/omf</Path>
+            <Path fileType="data">/usr/share/man</Path>
+            <Path fileType="data">/usr/share/cmake</Path>
+            <Path fileType="data">/usr/share/ukui*</Path>
+            <Path fileType="data">/usr/share/help</Path>
+            <Path fileType="data">/usr/share/icons</Path>
+            <Path fileType="data">/usr/share/dbus-1</Path>
+            <Path fileType="data">/usr/share/glib-2.0</Path>
+            <Path fileType="localedata">/usr/share/locale</Path>
+            <Path fileType="data">/usr/share/applications</Path>
         </Files>
     </Package>
     <Package>
@@ -84,11 +74,15 @@
         <Summary>Development files for ukui-panel</Summary>
         <RuntimeDependencies>
             <Dependency release="current">ukui-panel</Dependency>
+            <Dependency>libqtxdg-devel</Dependency>
+            <Dependency>qt5-base-devel</Dependency>
+            <Dependency>qt5-x11extras-devel</Dependency>
         </RuntimeDependencies>
         <Files>
             <Path fileType="header">/usr/include</Path>
             <Path fileType="data">/usr/lib/cmake</Path>
             <Path fileType="data">/usr/lib/pkgconfig</Path>
+            <Path fileType="data">/usr/share/gir-1.0</Path>
         </Files>
     </Package>
     <History>
