@@ -14,21 +14,17 @@
         <Description>UKUI media utilities</Description>
         <Archive sha1sum="68f8ede8a3e0b6e5bc96f69069948b9170fd6f12" type="targz">https://codeload.github.com/ukui/ukui-media/tar.gz/v3.0.1</Archive>
         <BuildDependencies>
+            <Dependency>gettext-devel</Dependency>
             <Dependency>cairo-devel</Dependency>
             <Dependency>pango-devel</Dependency>
             <Dependency>libcanberra-gtk3-devel</Dependency>
-            <Dependency>kwindowsystem-devel</Dependency>
             <Dependency>glib2-devel</Dependency>
             <Dependency>libmatemixer-devel</Dependency>
             <Dependency>mate-desktop-devel</Dependency>
             <Dependency>gtk3-devel</Dependency>
-            <Dependency>libcanberra-gtk-devel</Dependency>
             <Dependency>libcanberra-devel</Dependency>
             <Dependency>libxml2-devel</Dependency>
             <Dependency>gobject-introspection-devel</Dependency>
-            <Dependency>libqtxdg-devel</Dependency>
-            <Dependency>qt5-multimedia-devel</Dependency>
-            <Dependency>qt5-svg-devel</Dependency>
             <Dependency>autoconf-archive</Dependency>
             <Dependency>intltool</Dependency>
             <Dependency>mate-common</Dependency>
@@ -41,21 +37,12 @@
             <Dependency>cairo</Dependency>
             <Dependency>pango</Dependency>
             <Dependency>libcanberra-gtk3</Dependency>
-            <Dependency>kwindowsystem</Dependency>
             <Dependency>glib2</Dependency>
             <Dependency>libmatemixer</Dependency>
+            <Dependency>libxml2</Dependency>
             <Dependency>mate-desktop</Dependency>
             <Dependency>gtk3</Dependency>
-            <Dependency>libcanberra-gtk</Dependency>
             <Dependency>libcanberra</Dependency>
-            <Dependency>libxml2</Dependency>
-            <Dependency>gobject-introspection</Dependency>
-            <Dependency>libqtxdg</Dependency>
-            <Dependency>qt5-multimedia</Dependency>
-            <Dependency>qt5-svg</Dependency>
-            <Dependency>autoconf-archive</Dependency>
-            <Dependency>intltool</Dependency>
-            <Dependency>mate-common</Dependency>
         </RuntimeDependencies>
         -->
         <Files>
