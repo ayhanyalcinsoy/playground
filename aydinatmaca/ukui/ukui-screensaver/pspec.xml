@@ -12,18 +12,18 @@
         <IsA>data:</IsA>
         <Summary>Screensaver for UKUI desktop environment</Summary>
         <Description>Screensaver for UKUI desktop environment</Description>
-        <Archive sha1sum="733459b8e18e7b1f551893934b80a4d4923baab0" type="targz">https://codeload.github.com/ukui/ukui-screensaver/tar.gz/v3.0.1</Archive>
+        <Archive sha1sum="733459b8e18e7b1f551893934b80a4d4923baab0" type="targz">https://github.com/ukui/ukui-screensaver/archive/refs/tags/v3.0.1.tar.gz</Archive>
         <BuildDependencies>
             <Dependency>cmake</Dependency>
             <Dependency>libgcc</Dependency>
             <Dependency>pam-devel</Dependency>
-            <Dependency>dconf-devel</Dependency>
             <Dependency>libX11-devel</Dependency>
             <Dependency>libxcb-devel</Dependency>
             <Dependency>libXtst-devel</Dependency>
             <Dependency>qt5-base-devel</Dependency>
             <Dependency>gsettings-qt-devel</Dependency>
             <Dependency>qt5-x11extras-devel</Dependency>
+            <Dependency>qt5-linguist</Dependency>
         </BuildDependencies>
     </Source>
 
@@ -31,8 +31,6 @@
         <Name>ukui-screensaver</Name>
         <RuntimeDependencies>
             <Dependency>pam</Dependency>
-            <Dependency>dconf</Dependency>
-            <Dependency>cmake</Dependency>
             <Dependency>libX11</Dependency>
             <Dependency>libgcc</Dependency>
             <Dependency>libxcb</Dependency>
@@ -61,7 +59,7 @@
     </Package>
     <History>
         <Update release="1">
-            <Date>2020-11-11</Date>
+            <Date>2021-05-21</Date>
             <Version>3.0.1</Version>
             <Comment>First release</Comment>
             <Name>AYDIN ATMACA</Name>
