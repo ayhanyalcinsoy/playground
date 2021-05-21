@@ -26,7 +26,6 @@
         <Name>ukui-interface</Name>
         <RuntimeDependencies>
             <Dependency>libgcc</Dependency>
-            <Dependency>mate-common</Dependency>
             <Dependency>glib2</Dependency>
             <Dependency>qt5-base</Dependency>
         </RuntimeDependencies>
