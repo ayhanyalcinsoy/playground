@@ -11,8 +11,10 @@ from pisi.actionsapi import shelltools
 from pisi.actionsapi import get
 
 def setup():
-    shelltools.system("./autogen.sh")
-    autotools.configure()
+    #autotools.aclocal()
+    #autotools.autoreconf("-vif")
+    shelltools.system("NOCONFIGURE=1 ./autogen.sh")
+    autotools.configure("--libexecdir=/usr/lib --without-keyring")
 
 def build():
     autotools.make()
