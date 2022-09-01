@@ -1,0 +1,54 @@
+<PISI>
+    <Source>
+        <Name>pantheon-terminal</Name>
+        <Homepage>https://github.com/elementary/terminal</Homepage>
+        <Packager>
+            <Name>Alihan Öztürk</Name>
+            <Email>alihan@pisilinux.org</Email>
+        </Packager>
+        <License>LGPLv3</License>
+        <PartOf>desktop</PartOf>
+        <Summary>A super lightweight, beautiful, and simple terminal. Comes with sane defaults, browser-class tabs, sudo paste protection, smart copy/paste, and little to no configuration.</Summary>
+        <Description>A super lightweight, beautiful, and simple terminal. Comes with sane defaults, browser-class tabs, sudo paste protection, smart copy/paste, and little to no configuration.</Description>
+        <BuildDependencies>
+            <Dependency>appstream-devel</Dependency>
+            <Dependency>granite-devel</Dependency>
+            <Dependency>libhandy-devel</Dependency>
+            <Dependency>libpcre2-devel</Dependency>
+            <Dependency>cmake</Dependency>
+            <Dependency>desktop-file-utils</Dependency>
+            <Dependency>vala-devel</Dependency>
+            <Dependency>vte-devel</Dependency>
+            <Dependency>intltool</Dependency>
+            <Dependency>meson</Dependency>
+        </BuildDependencies>
+        <Archive sha1sum="7b5159cb3ee31f2aec397ae49a9b4441060d96f3" type="targz">https://github.com/elementary/terminal/archive/refs/tags/6.0.2.tar.gz</Archive>
+    </Source>
+    <Package>
+        <Name>pantheon-terminal</Name>
+        <Summary>A super lightweight, beautiful, and simple terminal. Comes with sane defaults, browser-class tabs, sudo paste protection, smart copy/paste, and little to no configuration.</Summary>
+        <RuntimeDependencies>
+            <Dependency>pango</Dependency>
+            <Dependency>libgee</Dependency>
+            <Dependency>granite</Dependency>
+            <Dependency>libpcre2</Dependency>
+            <Dependency>libhandy</Dependency>
+            <Dependency>glib2</Dependency>
+            <Dependency>gtk3</Dependency>
+            <Dependency>vte</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="data">/usr/share</Path>
+        </Files>
+    </Package>
+    <History>
+        <Update release="1">
+            <Date>04-08-2022</Date>
+            <Version>6.0.2</Version>
+            <Comment>First release</Comment>
+            <Name>Alihan Öztürk</Name>
+            <Email>alihan@pisilinux.org</Email>
+        </Update>
+    </History>
+</PISI>

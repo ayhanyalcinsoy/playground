@@ -1,0 +1,81 @@
+<PISI>
+    <Source>
+        <Name>pantheon-code</Name>
+        <Homepage>https://github.com/elementary/code</Homepage>
+        <Packager>
+            <Name>Alihan Öztürk</Name>
+            <Email>alihan@pisilinux.org</Email>
+        </Packager>
+        <License>GPLv3</License>
+        <PartOf>desktop</PartOf>
+        <Summary>Code editor designed for Pantheon DE</Summary>
+        <Description>Code editor designed for Pantheon DE</Description>
+        <BuildDependencies>
+            <Dependency>editorconfig-core-c-devel</Dependency>
+            <Dependency>webkit2gtk-devel</Dependency>
+            <Dependency>gobject-introspection-devel</Dependency>
+            <Dependency>glib2-devel</Dependency>
+            <Dependency>granite-devel</Dependency>
+            <Dependency>libhandy-devel</Dependency>
+            <Dependency>gtk3-devel</Dependency>
+            <Dependency>gtksourceview4-devel</Dependency>
+            <Dependency>gtkspell3-devel</Dependency>
+            <Dependency>libgee-devel</Dependency>
+            <Dependency>libgit2-devel</Dependency>
+            <Dependency>libpeas-devel</Dependency>
+            <Dependency>libsoup-devel</Dependency>
+            <Dependency>meson</Dependency>
+            <Dependency>libgit2-glib-devel</Dependency>
+            <Dependency>intltool</Dependency>
+            <Dependency>cmake</Dependency>
+            <Dependency>vte-devel</Dependency>
+            <Dependency>vala-devel</Dependency>
+        </BuildDependencies>
+        <Archive type="targz" sha1sum="72fb359787742fe59b111c6c8075e956aad4a7a1">https://github.com/elementary/code/archive/refs/tags/6.2.0.tar.gz</Archive>
+    </Source>
+    <Package>
+        <Name>pantheon-code</Name>
+        <Summary>Code editor designed for Pantheon DE</Summary>
+        <RuntimeDependencies>
+            <Dependency>editorconfig-core-c</Dependency>
+            <Dependency>glib2</Dependency>
+            <Dependency>vala</Dependency>
+            <Dependency>pango</Dependency>
+            <Dependency>libhandy</Dependency>
+            <Dependency>fontconfig</Dependency>
+            <Dependency>granite</Dependency>
+            <Dependency>libgit2-glib</Dependency>
+            <Dependency>gtk3</Dependency>
+            <Dependency>gtksourceview4</Dependency>
+            <Dependency>gtkspell3</Dependency>
+            <Dependency>libgee</Dependency>
+            <Dependency>libpeas</Dependency>
+            <Dependency>libsoup</Dependency>
+            <Dependency>vte</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="executable">/usr/bin</Path>
+            <Path fileType="library">/usr/lib</Path>
+            <Path fileType="data">/usr/share</Path>
+        </Files>
+    </Package>
+    <Package>
+        <Name>pantheon-code-devel</Name>
+        <RuntimeDependencies>
+            <Dependency release="current">pantheon-code</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="header">/usr/include</Path>
+            <Path fileType="library">/usr/lib/pkgconfig</Path>
+        </Files>
+    </Package>
+    <History>
+        <Update release="1">
+            <Date>04-08-2022</Date>
+            <Version>6.2.0</Version>
+            <Comment>First release</Comment>
+            <Name>Alihan Öztürk</Name>
+            <Email>alihan@pisilinux.org</Email>
+        </Update>
+    </History>
+</PISI>

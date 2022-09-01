@@ -1,0 +1,64 @@
+<PISI>
+    <Source>
+        <Name>pantheon-applications-menu</Name>
+        <Homepage>https://github.com/elementary/applications-menu</Homepage>
+        <Packager>
+            <Name>Alihan Öztürk</Name>
+            <Email>alihan@pisilinux.org</Email>
+        </Packager>
+        <License>GPLv3</License>
+        <PartOf>desktop</PartOf>
+        <Summary>Lightweight and stylish app launcher.</Summary>
+        <Description>Lightweight and stylish app launcher.</Description>
+        <BuildDependencies>
+            <Dependency>appstream-devel</Dependency>
+            <Dependency>gnome-menus-devel</Dependency>
+            <Dependency>granite-devel</Dependency>
+            <Dependency>gtk3-devel</Dependency>
+            <Dependency>json-glib-devel</Dependency>
+            <Dependency>libgee-devel</Dependency>
+            <Dependency>libhandy-devel</Dependency>
+            <Dependency>libsoup-devel</Dependency>
+            <Dependency>meson</Dependency>
+            <Dependency>pkgconfig</Dependency>
+            <Dependency>plank-devel</Dependency>
+            <Dependency>switchboard-devel</Dependency>
+            <Dependency>vala-devel</Dependency>
+            <Dependency>wingpanel-devel</Dependency>
+        </BuildDependencies>
+        <Archive sha1sum="6593313366361b5a5895f9da96d3b93a8f89944c" type="targz">https://github.com/elementary/applications-menu/archive/refs/tags/2.10.2.tar.gz</Archive>
+    </Source>
+    <Package>
+        <Name>pantheon-applications-menu</Name>
+        <Summary>Lightweight and stylish app launcher.</Summary>
+        <RuntimeDependencies>
+            <Dependency>appstream</Dependency>
+            <Dependency>gnome-menus</Dependency>
+            <Dependency>granite</Dependency>
+            <Dependency>gtk3</Dependency>
+            <Dependency>json-glib</Dependency>
+            <Dependency>libgee</Dependency>
+            <Dependency>libhandy</Dependency>
+            <Dependency>libsoup</Dependency>
+            <Dependency>pkgconfig</Dependency>
+            <Dependency>plank</Dependency>
+            <Dependency>switchboard</Dependency>
+            <Dependency>wingpanel</Dependency>
+            <Dependency>gdk-pixbuf</Dependency>
+            <Dependency>glib2</Dependency>
+        </RuntimeDependencies>
+        <Files>
+            <Path fileType="library">/usr/lib</Path>
+            <Path fileType="data">/usr/share</Path>
+        </Files>
+    </Package>
+    <History>
+        <Update release="1">
+            <Date>04-08-2022</Date>
+            <Version>2.10.2</Version>
+            <Comment>First release</Comment>
+            <Name>Alihan Öztürk</Name>
+            <Email>alihan@pisilinux.org</Email>
+        </Update>
+    </History>
+</PISI>
